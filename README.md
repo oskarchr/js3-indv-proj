@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EventFinder
 
-## Getting Started
+**EventFinder** is an event management platform built with **Next.js** and **Tailwind CSS**. It leverages an external API developed in a collaborative group project, which was focused on building a comprehensive backoffice system for event management. This API, accessible [here](https://github.com/chvlpont/event), supports essential features such as event creation, user booking, and attendance tracking. The backoffice system also includes administrator management, content customization via a CMS, and participant lists. **EventFinder** integrates these functionalities to provide a user-friendly interface for browsing, registering, and managing events.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Authentication:** Users can register and log in to access the platform. Authentication is integrated using the same methods as in the group project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Event Listings:** Displays a comprehensive list of events sourced from the external API.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Event Details:** Users can view detailed information about each event, including date, time, location, and descriptions on dedicated event pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Event Registration:** Users can register for events if there are available spots, ensuring quick and easy booking.
 
-## Learn More
+- **Fully Booked Indicator:** Events that have reached capacity are clearly marked, preventing further registrations.
 
-To learn more about Next.js, take a look at the following resources:
+- **Cancel Registration:** If a user changes their mind, they can cancel their registration for an event.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Sorting and Filtering:** Events can be sorted by date and location, while past events are automatically hidden.
